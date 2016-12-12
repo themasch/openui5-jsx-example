@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    [ "transform-jsx", { useNew: true, useVariables: true, function: "createElement" }]
+  ],
+  "presets": ["latest"]
+}

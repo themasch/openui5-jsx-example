@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<div id="root">  </div>
+<script id="sap-ui-bootstrap"
+    type="text/javascript"
+    src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+    data-sap-ui-theme="sap_belize"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-resourceRoots='{
+      "masch.jsx": "./dist"
+    }'></script>
+    <script src="./dist/test.js"></script>
+<script>
+var oView = sap.ui.view({ 
+    viewName: "masch.jsx.TestView",
+    type: sap.ui.core.mvc.ViewType.JS
+});
+oView.placeAt("root");
+</script>
+</body>
+</html>
